@@ -1,7 +1,9 @@
 body {
     text-align: center;
     background-image:url(images/photo-1531436107035-40b2e85b7a1b.jpg);
+    background-size: cover;
     color: white;
+    overflow-y: hidden;
 }
 #heure {
     font-size: 8rem;
@@ -10,15 +12,16 @@ body {
 h1 {
 }
 #texte {
-    font-size: 2rem;
+    font-size: 16px;
+    text-align: center;
+    text-transform : uppercase;
+    font-weight: 600;
+    color: white;
 }
 #bloc {
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-    width:800px;
-    height:500px;
-    background: rgba(128, 128, 128, 0.61);
+    padding: 16px;
+    margin : auto;
+    background: rgba(0,0, 0, 0.5);
     border-radius: 15px;
 }
 p {
@@ -28,27 +31,11 @@ blockquote {
     font-style: italic;
     font-size: x-large;
 }
-#cit {
-    width:230px;
-    height:40px;
-    border-radius: 35px;
-    line-height: 40px;
+#cit p,#imageFond p, .weather, .objectif{
+    font-size: 32px;
+    font-weight:700;
     vertical-align: center;
-    border-width:2px;
-    border-style: solid;
-    border-color: #3c4550;
 
-
-}
-#imageFond {
-    width:230px;
-    height:40px;
-    border-radius: 35px;
-    line-height: 40px;
-    vertical-align: center;
-    border-width:2px;
-    border-style: solid;
-    border-color: #3c4550;
 }
 
 #global {
