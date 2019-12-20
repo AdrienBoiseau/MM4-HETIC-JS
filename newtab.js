@@ -50,7 +50,6 @@ function horloge(type)
 
     //Type FR
     if (type === "fr") {
-        console.log("là");
         let heurFinal = heure+":"+ minutes+":"+ seconde;
         document.getElementById("heure").textContent = heurFinal;
 
@@ -114,6 +113,21 @@ document.getElementById("buttonMeteo").onclick = function () {
     document.getElementById("clouds").innerText = meteo.clouds.all + " %";
     document.getElementById("tableMeteo").style.visibility = "visible";
 };
+
+
+document.getElementById("focusButton").onclick = function() {
+    let texte = document.getElementById('focus');
+    document.getElementById("memo").style.visibility = "visible";
+
+
+    var li = document.createElement('li');
+    li.innerHTML = texte.value;
+    document.getElementById('liste').appendChild(li);
+
+
+
+};
+
 
 //Citation dès le départ
 citation();

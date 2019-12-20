@@ -7,51 +7,64 @@
     <link href="main.css" rel="stylesheet">
 </head>
 <body>
-    <h1 id="bonjour">Bonjour Adrien,</h1>
-    <span id="heure"></span>
-    <div id="bloc">
-        <p id="texte">Nous sommes le <span id="date"></span></p>
-        <center><div id="cit"><p>Votre citation du jour :</p></div></center>
-        <blockquote id="citationIci"></blockquote>
-        <input class="btn btn-warning btn-lg" id="citationButton" type="button" value="Afficher une autre citation"><br/><br/>
-        <center><div id="imageFond"><p>Changer l'image de fond : </p></div></center><br/>
+    <div id="global">
+    <div id="memo" style="visibility: hidden">
+        <ul id="liste">
 
-        <!-- Input pour choisir l'image  -->
-        <input type="file" id="inputImage" name="inputImage" accept="image/*">
-        <input class="btn btn-warning" id="uploadImage" type="button" value="Valider"><br/><br/>
+        </ul>
+    </div>
+    <div id="content">
+        <h1 id="bonjour">Bonjour Adrien,</h1>
+        <span id="heure"></span>
+        <div id="bloc">
+            <p id="texte">Nous sommes le <span id="date"></span></p>
+            <center><div id="cit"><p style="color:black">Votre citation du jour</p></div></center>
+            <blockquote id="citationIci"></blockquote>
+            <input class="btn btn-warning btn-lg" id="citationButton" type="button" value="Afficher une autre citation"><br/><br/>
+            <center><div id="imageFond"><p style="color:black">Changer l'image de fond : </p></div></center><br/>
 
-        <!-- Input pour la météo -->
-        <input id="localisation" type="text" value="Paris"/>
-        <input class="btn btn-success" id="buttonMeteo" type="button" value="Voir la météo"/>
-        <p id="zone_meteo"></p>
+            <!-- Input pour choisir l'image  -->
+            <input type="file" id="inputImage" name="inputImage" accept="image/*">
+            <input class="btn btn-warning" id="uploadImage" type="button" value="Valider"><br/><br/>
 
-        <!-- Tablea pour la météo  -->
-        <table style="visibility: hidden" id = "tableMeteo" class="table table-dark">
-            <thead class="thead-light">
-                <tr>
-                    <th scope="col">-</th>
-                    <th scope="col" id="ville"></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">Température</th>
-                    <td id="temp"></td>
-                </tr>
-                <tr>
-                    <th scope="row">Humidité</th>
-                    <td id="humid"></td>
-                </tr>
-                <tr>
-                    <th scope="row">Vent</th>
-                    <td id="wind"></td>
-                </tr>
-                <tr>
-                    <th scope="row">Couverture nuageuse</th>
-                    <td id="clouds"></td>
-                </tr>
-            </tbody>
-        </table>
+            <!-- Input pour la météo -->
+            <input id="localisation" type="text" value="Paris"/>
+            <input class="btn btn-success" id="buttonMeteo" type="button" value="Voir la météo"/>
+            <p id="zone_meteo"></p>
+
+            <label for="focus">Quel est votre objectif du jour ? </label>
+            <input id="focus" type="text"/>
+            <input class="btn btn-success" id="focusButton" type="button" value="Valider"/>
+
+            <!-- Tablea pour la météo  -->
+            <table style="visibility: hidden" id = "tableMeteo" class="table table-dark">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">-</th>
+                        <th scope="col" id="ville"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Température</th>
+                        <td id="temp"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Humidité</th>
+                        <td id="humid"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Vent</th>
+                        <td id="wind"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Couverture nuageuse</th>
+                        <td id="clouds"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     </div>
 </body>
 </html>
