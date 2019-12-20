@@ -14,7 +14,10 @@
     "default_popup": "popup.html"
   },
   "icons": {
-    "24": "images/imageExtension.png"
+    "16": "images/img16.jpg",
+    "32": "images/img32.jpg",
+    "48": "images/img48.jpg",
+    "128": "images/img128.jpg"
   },
   "manifest_version": 2
 }

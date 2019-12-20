@@ -114,18 +114,44 @@ document.getElementById("buttonMeteo").onclick = function () {
     document.getElementById("tableMeteo").style.visibility = "visible";
 };
 
-
+//ajouter texte dans les memos
 document.getElementById("focusButton").onclick = function() {
+
+    let div = document.getElementById('memo');
     let texte = document.getElementById('focus');
-    document.getElementById("memo").style.visibility = "visible";
+    if (texte.value === "") {
+        alert("Vous devez entrer du texte !")
+    } else {
+        document.getElementById("memo").style.visibility = "visible";
+        div.style.height = div.offsetHeight + 24 +"px";
+        var li = document.createElement('li');
+        li.innerHTML = "🗑" + texte.value;
+        document.getElementById('liste').appendChild(li);
+        texte.value = "";
 
+        var liste=document.getElementById("liste").getElementsByTagName("li");
 
-    var li = document.createElement('li');
-    li.innerHTML = texte.value;
-    document.getElementById('liste').appendChild(li);
+        for(li in liste){
+            liste[li].onclick=function(){
+                this.parentNode.removeChild(this);
+                div.style.height = div.offsetHeight - 24 +"px";
+            }
+        }
 
+    }
 
-
+};
+//reset memo
+document.getElementById("resetButton").onclick = function() {
+    var ul = document.getElementById('liste');
+    if (ul) {
+        while (ul.firstChild) {
+            ul.removeChild(ul.firstChild);
+        }
+    }
+    let div = document.getElementById('memo');
+    div.style.height = "75px";
+    div.style.visibility = "hidden";
 };
 
 
