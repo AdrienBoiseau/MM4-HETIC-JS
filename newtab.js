@@ -57,10 +57,10 @@ function horloge(type)
     //Type INTER
     if (type === "inter") {
         let heurFinal = "";
-        if (heure > 12) {
+        if (heure >= 12) {
             heurFinal = heure % 12 +":"+ minutes+":"+ seconde + " PM";
         } else {
-            heurFinal = heure % 12+":"+ minutes+":"+ seconde + " AM";
+            heurFinal = heure +":"+ minutes+":"+ seconde + " AM";
         }
         document.getElementById("heure").textContent = heurFinal;
     }

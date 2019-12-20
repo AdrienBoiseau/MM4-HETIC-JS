@@ -3,7 +3,6 @@ body {
     background-image:url(images/photo-1531436107035-40b2e85b7a1b.jpg);
     background-size: cover;
     color: white;
-    overflow-y: hidden;
 }
 #heure {
     font-size: 8rem;
