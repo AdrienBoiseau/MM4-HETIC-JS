@@ -1,0 +1,20 @@
+{
+  "name": "Amazing new tab by Adrien",
+  "version": "1.0",
+  "description": "Cette extension vous permet de profiter d'un nouvel onglet super stylé ! :)",
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "24": "images/imageExtension.png"
+  },
+  "manifest_version": 2
+}

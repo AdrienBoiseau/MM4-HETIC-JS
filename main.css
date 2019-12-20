@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-image:url(images/photo-1531436107035-40b2e85b7a1b.jpg);
+    color: white;
+}
+#heure {
+    font-size: 8rem;
+    font-weight: bold;
+}
+h1 {
+    margin-top: 3%;
+}
+#texte {
+    font-size: 2rem;
+}
+#bloc {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width:800px;
+    height:500px;
+    background: rgba(128, 128, 128, 0.61);
+    border-radius: 15px;
+}
+p {
+    font-size: 1.2rem;
+}
+blockquote {
+    font-style: italic;
+    font-size: x-large;
+}
+#cit {
+    width:300px;
+    height:40px;
+    background: dodgerblue;
+    border-radius: 35px;
+    line-height: 40px;
+    vertical-align: center;
+}
+#imageFond {
+    width:300px;
+    height:40px;
+    background: dodgerblue;
+    border-radius: 35px;
+    line-height: 40px;
+    vertical-align: center;
+}
